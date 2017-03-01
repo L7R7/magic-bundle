@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="consumer-blueprint_main" target="1.8" />
+      <module name="consumer-blueprint_test" target="1.8" />
+      <module name="consumer-listener_main" target="1.8" />
+      <module name="consumer-listener_test" target="1.8" />
+      <module name="consumer-listening-tracker_main" target="1.8" />
+      <module name="consumer-listening-tracker_test" target="1.8" />
+      <module name="consumer-tracker_main" target="1.8" />
+      <module name="consumer-tracker_test" target="1.8" />
+      <module name="consumer_main" target="1.8" />
+      <module name="consumer_test" target="1.8" />
+      <module name="magic-bundle_main" target="1.8" />
+      <module name="magic-bundle_test" target="1.8" />
+      <module name="service-api_main" target="1.8" />
+      <module name="service-api_test" target="1.8" />
+      <module name="service-impl_main" target="1.8" />
+      <module name="service-impl_test" target="1.8" />
+      <module name="servlet-filter_main" target="1.8" />
+      <module name="servlet-filter_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

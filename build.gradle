@@ -1,0 +1,8 @@
+group 'de.l7r7.proto'
+version '0.1'
+
+subprojects {
+    repositories {
+        mavenCentral()
+    }
+}

@@ -1,0 +1,14 @@
+group 'de.l7r7.proto'
+version '0.1'
+
+apply from: "$rootDir/gradle/osgi.gradle"
+
+dependencies {
+    compile project(':service-api')
+}
+
+jar {
+    manifest { // the manifest of the default jar is of type OsgiManifest
+        instruction 'Bundle-Activator', 'de.l7r7.proto.bundle.magic.consumer.listener.Activator'
+    }
+}

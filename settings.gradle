@@ -1,0 +1,10 @@
+rootProject.name = 'magic-bundle'
+
+include ':service-api'
+include ':service-impl'
+include ':consumer-blueprint'
+include ':consumer-listener'
+include ':consumer-listening-tracker'
+include ':consumer-tracker'
+include ':servlet-filter'
+
