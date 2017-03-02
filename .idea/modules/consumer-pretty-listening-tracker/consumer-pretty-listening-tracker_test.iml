@@ -13,6 +13,7 @@
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.24" level="project" />
     <orderEntry type="module" module-name="service-number-api_main" />
     <orderEntry type="module" module-name="service-string-api_main" />
+    <orderEntry type="module" module-name="consumer-util_main" />
   </component>
   <component name="TestModuleProperties" production-module="consumer-pretty-listening-tracker_main" />
 </module>

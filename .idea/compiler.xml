@@ -22,6 +22,8 @@
       <module name="consumer-string-blueprint_test" target="1.8" />
       <module name="consumer-tracker_main" target="1.8" />
       <module name="consumer-tracker_test" target="1.8" />
+      <module name="consumer-util_main" target="1.8" />
+      <module name="consumer-util_test" target="1.8" />
       <module name="consumer_main" target="1.8" />
       <module name="consumer_test" target="1.8" />
       <module name="magic-bundle_main" target="1.8" />

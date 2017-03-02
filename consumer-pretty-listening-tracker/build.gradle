@@ -6,6 +6,7 @@ apply from: "$rootDir/gradle/osgi.gradle"
 dependencies {
     compile project(':service-number-api')
     compile project(':service-string-api')
+    compile project(':consumer-util')
 }
 
 jar {

@@ -1,4 +1,4 @@
-package de.l7r7.proto.bundle.magic.consumer.pretty.listeningtracker;
+package de.l7r7.proto.bundle.magic.util;
 
 import org.osgi.framework.*;
 import org.osgi.util.tracker.ServiceTracker;
