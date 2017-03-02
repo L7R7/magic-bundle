@@ -2,14 +2,22 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="consumer-blueprint-number_main" target="1.8" />
+      <module name="consumer-blueprint-number_test" target="1.8" />
+      <module name="consumer-blueprint-string_main" target="1.8" />
+      <module name="consumer-blueprint-string_test" target="1.8" />
       <module name="consumer-blueprint_main" target="1.8" />
       <module name="consumer-blueprint_test" target="1.8" />
       <module name="consumer-listener_main" target="1.8" />
       <module name="consumer-listener_test" target="1.8" />
       <module name="consumer-listening-tracker_main" target="1.8" />
       <module name="consumer-listening-tracker_test" target="1.8" />
+      <module name="consumer-number-blueprint_main" target="1.8" />
+      <module name="consumer-number-blueprint_test" target="1.8" />
       <module name="consumer-pretty-listening-tracker_main" target="1.8" />
       <module name="consumer-pretty-listening-tracker_test" target="1.8" />
+      <module name="consumer-string-blueprint_main" target="1.8" />
+      <module name="consumer-string-blueprint_test" target="1.8" />
       <module name="consumer-tracker_main" target="1.8" />
       <module name="consumer-tracker_test" target="1.8" />
       <module name="consumer_main" target="1.8" />
@@ -22,6 +30,14 @@
       <module name="service-api_test" target="1.8" />
       <module name="service-impl_main" target="1.8" />
       <module name="service-impl_test" target="1.8" />
+      <module name="service-number-api_main" target="1.8" />
+      <module name="service-number-api_test" target="1.8" />
+      <module name="service-number-impl_main" target="1.8" />
+      <module name="service-number-impl_test" target="1.8" />
+      <module name="service-string-api_main" target="1.8" />
+      <module name="service-string-api_test" target="1.8" />
+      <module name="service-string-impl_main" target="1.8" />
+      <module name="service-string-impl_test" target="1.8" />
       <module name="servlet-filter_main" target="1.8" />
       <module name="servlet-filter_test" target="1.8" />
     </bytecodeTargetLevel>

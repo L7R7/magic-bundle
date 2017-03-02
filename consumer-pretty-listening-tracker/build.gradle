@@ -4,7 +4,7 @@ version '0.1'
 apply from: "$rootDir/gradle/osgi.gradle"
 
 dependencies {
-    compile project(':service-api')
+    compile project(':service-number-api')
 }
 
 jar {

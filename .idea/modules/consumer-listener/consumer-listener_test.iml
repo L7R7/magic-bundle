@@ -11,7 +11,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="consumer-listener_main" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.24" level="project" />
-    <orderEntry type="module" module-name="service-api_main" />
+    <orderEntry type="module" module-name="service-number-api_main" />
   </component>
   <component name="TestModuleProperties" production-module="consumer-listener_main" />
 </module>

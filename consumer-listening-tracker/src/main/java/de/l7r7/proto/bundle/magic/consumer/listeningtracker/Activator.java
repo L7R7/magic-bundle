@@ -1,6 +1,6 @@
 package de.l7r7.proto.bundle.magic.consumer.listeningtracker;
 
-import de.l7r7.proto.bundle.magic.api.RandomNumberGenerator;
+import de.l7r7.proto.bundle.magic.number.api.RandomNumberGenerator;
 import org.osgi.framework.*;
 import org.osgi.util.tracker.ServiceTracker;
 import org.slf4j.Logger;

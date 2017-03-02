@@ -1,6 +1,6 @@
 package de.l7r7.proto.bundle.magic.consumer.listener;
 
-import de.l7r7.proto.bundle.magic.api.RandomNumberGenerator;
+import de.l7r7.proto.bundle.magic.number.api.RandomNumberGenerator;
 import org.osgi.framework.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer-blueprint/consumer-blueprint.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer-blueprint/consumer-blueprint.iml" group="consumer-blueprint" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer-blueprint/consumer-blueprint_main.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer-blueprint/consumer-blueprint_main.iml" group="consumer-blueprint" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer-blueprint/consumer-blueprint_test.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer-blueprint/consumer-blueprint_test.iml" group="consumer-blueprint" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer-blueprint-number/consumer-blueprint-number.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer-blueprint-number/consumer-blueprint-number.iml" group="consumer-blueprint-number" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer-blueprint-number/consumer-blueprint-number_main.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer-blueprint-number/consumer-blueprint-number_main.iml" group="consumer-blueprint-number" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer-blueprint-number/consumer-blueprint-number_test.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer-blueprint-number/consumer-blueprint-number_test.iml" group="consumer-blueprint-number" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer-blueprint-string/consumer-blueprint-string.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer-blueprint-string/consumer-blueprint-string.iml" group="consumer-blueprint-string" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer-blueprint-string/consumer-blueprint-string_main.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer-blueprint-string/consumer-blueprint-string_main.iml" group="consumer-blueprint-string" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer-blueprint-string/consumer-blueprint-string_test.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer-blueprint-string/consumer-blueprint-string_test.iml" group="consumer-blueprint-string" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer-listener/consumer-listener.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer-listener/consumer-listener.iml" group="consumer-listener" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer-listener/consumer-listener_main.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer-listener/consumer-listener_main.iml" group="consumer-listener" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer-listener/consumer-listener_test.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer-listener/consumer-listener_test.iml" group="consumer-listener" />
@@ -18,12 +21,18 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer-tracker/consumer-tracker_main.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer-tracker/consumer-tracker_main.iml" group="consumer-tracker" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer-tracker/consumer-tracker_test.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer-tracker/consumer-tracker_test.iml" group="consumer-tracker" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/magic-bundle.iml" filepath="$PROJECT_DIR$/.idea/modules/magic-bundle.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-api/service-api.iml" filepath="$PROJECT_DIR$/.idea/modules/service-api/service-api.iml" group="service-api" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-api/service-api_main.iml" filepath="$PROJECT_DIR$/.idea/modules/service-api/service-api_main.iml" group="service-api" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-api/service-api_test.iml" filepath="$PROJECT_DIR$/.idea/modules/service-api/service-api_test.iml" group="service-api" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-impl/service-impl.iml" filepath="$PROJECT_DIR$/.idea/modules/service-impl/service-impl.iml" group="service-impl" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-impl/service-impl_main.iml" filepath="$PROJECT_DIR$/.idea/modules/service-impl/service-impl_main.iml" group="service-impl" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-impl/service-impl_test.iml" filepath="$PROJECT_DIR$/.idea/modules/service-impl/service-impl_test.iml" group="service-impl" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-number-api/service-number-api.iml" filepath="$PROJECT_DIR$/.idea/modules/service-number-api/service-number-api.iml" group="service-number-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-number-api/service-number-api_main.iml" filepath="$PROJECT_DIR$/.idea/modules/service-number-api/service-number-api_main.iml" group="service-number-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-number-api/service-number-api_test.iml" filepath="$PROJECT_DIR$/.idea/modules/service-number-api/service-number-api_test.iml" group="service-number-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-number-impl/service-number-impl.iml" filepath="$PROJECT_DIR$/.idea/modules/service-number-impl/service-number-impl.iml" group="service-number-impl" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-number-impl/service-number-impl_main.iml" filepath="$PROJECT_DIR$/.idea/modules/service-number-impl/service-number-impl_main.iml" group="service-number-impl" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-number-impl/service-number-impl_test.iml" filepath="$PROJECT_DIR$/.idea/modules/service-number-impl/service-number-impl_test.iml" group="service-number-impl" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-string-api/service-string-api.iml" filepath="$PROJECT_DIR$/.idea/modules/service-string-api/service-string-api.iml" group="service-string-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-string-api/service-string-api_main.iml" filepath="$PROJECT_DIR$/.idea/modules/service-string-api/service-string-api_main.iml" group="service-string-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-string-api/service-string-api_test.iml" filepath="$PROJECT_DIR$/.idea/modules/service-string-api/service-string-api_test.iml" group="service-string-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-string-impl/service-string-impl.iml" filepath="$PROJECT_DIR$/.idea/modules/service-string-impl/service-string-impl.iml" group="service-string-impl" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-string-impl/service-string-impl_main.iml" filepath="$PROJECT_DIR$/.idea/modules/service-string-impl/service-string-impl_main.iml" group="service-string-impl" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-string-impl/service-string-impl_test.iml" filepath="$PROJECT_DIR$/.idea/modules/service-string-impl/service-string-impl_test.iml" group="service-string-impl" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/servlet-filter/servlet-filter.iml" filepath="$PROJECT_DIR$/.idea/modules/servlet-filter/servlet-filter.iml" group="servlet-filter" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/servlet-filter/servlet-filter_main.iml" filepath="$PROJECT_DIR$/.idea/modules/servlet-filter/servlet-filter_main.iml" group="servlet-filter" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/servlet-filter/servlet-filter_test.iml" filepath="$PROJECT_DIR$/.idea/modules/servlet-filter/servlet-filter_test.iml" group="servlet-filter" />

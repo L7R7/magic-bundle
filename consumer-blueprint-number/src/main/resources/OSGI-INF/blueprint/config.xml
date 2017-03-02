@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+    <bean id="main" class="de.l7r7.proto.bundle.magic.consumer.blueprint.number.Main"/>
+
+    <reference-list id="randomNumberGeneratorService"
+                    interface="de.l7r7.proto.bundle.magic.number.api.RandomNumberGenerator">
+        <reference-listener bind-method="setRandomNumberGenerator" unbind-method="unsetRandomNumberGenerator">
+            <ref component-id="main"/>
+        </reference-listener>
+    </reference-list>
+</blueprint>

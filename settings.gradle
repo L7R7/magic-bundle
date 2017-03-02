@@ -1,11 +1,13 @@
 rootProject.name = 'magic-bundle'
 
-include ':service-api'
-include ':service-impl'
-include ':consumer-blueprint'
+include ':service-number-api'
+include ':service-number-impl'
+include ':service-string-api'
+include ':service-string-impl'
+include ':consumer-blueprint-number'
+include ':consumer-blueprint-string'
 include ':consumer-listener'
 include ':consumer-listening-tracker'
 include ':consumer-tracker'
 include ':servlet-filter'
 include ':consumer-pretty-listening-tracker'
-
