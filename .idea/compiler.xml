@@ -12,6 +12,8 @@
       <module name="consumer-listener_test" target="1.8" />
       <module name="consumer-listening-tracker_main" target="1.8" />
       <module name="consumer-listening-tracker_test" target="1.8" />
+      <module name="consumer-multi-service_main" target="1.8" />
+      <module name="consumer-multi-service_test" target="1.8" />
       <module name="consumer-number-blueprint_main" target="1.8" />
       <module name="consumer-number-blueprint_test" target="1.8" />
       <module name="consumer-pretty-listening-tracker_main" target="1.8" />
