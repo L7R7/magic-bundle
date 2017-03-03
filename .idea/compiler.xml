@@ -20,6 +20,8 @@
       <module name="consumer-pretty-listening-tracker_test" target="1.8" />
       <module name="consumer-string-blueprint_main" target="1.8" />
       <module name="consumer-string-blueprint_test" target="1.8" />
+      <module name="consumer-tracker-customizer_main" target="1.8" />
+      <module name="consumer-tracker-customizer_test" target="1.8" />
       <module name="consumer-tracker_main" target="1.8" />
       <module name="consumer-tracker_test" target="1.8" />
       <module name="consumer-util_main" target="1.8" />
