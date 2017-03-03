@@ -3,17 +3,18 @@ package de.l7r7.proto.bundle.magic.util;
 import org.osgi.framework.*;
 import org.osgi.util.tracker.ServiceTracker;
 
+import java.util.Optional;
+import java.util.function.Consumer;
+
 public class CustomGenericDefaultServiceObservingProvidility<T> {
     private BundleContext context;
-    private Class<T> clazz;
-    private GenericServiceConsumer<T> consumer;
+    private Consumer<Optional<T>> consumer;
     private ServiceListener listener;
     private ServiceTracker<T, T> serviceTracker;
     private ServiceReference<T> serviceReference;
 
-    public void start(BundleContext bundleContext, Class<T> clazz, GenericServiceConsumer<T> consumer) throws InvalidSyntaxException {
+    public void start(BundleContext bundleContext, Class<T> clazz, Consumer<Optional<T>> consumer) throws InvalidSyntaxException {
         this.context = bundleContext;
-        this.clazz = clazz;
         this.consumer = consumer;
 
         serviceTracker = new ServiceTracker<>(bundleContext, clazz.getName(), null);
@@ -21,13 +22,9 @@ public class CustomGenericDefaultServiceObservingProvidility<T> {
         serviceReference = serviceTracker.getServiceReference();
         if (serviceReference != null) {
             final T service = bundleContext.getService(serviceReference);
-            if (service != null) {
-                consumer.serviceAvailable(service);
-            } else {
-                consumer.serviceUnavailable();
-            }
+            consumer.accept(Optional.ofNullable(service));
         } else {
-            consumer.serviceUnavailable();
+            consumer.accept(Optional.empty());
         }
 
         listener = event -> {
@@ -37,11 +34,7 @@ public class CustomGenericDefaultServiceObservingProvidility<T> {
                         serviceReference = (ServiceReference<T>) event.getServiceReference();
                     }
                     final T service = bundleContext.getService(serviceReference);
-                    if (service != null) {
-                        consumer.serviceAvailable(service);
-                    } else {
-                        consumer.serviceUnavailable();
-                    }
+                    consumer.accept(Optional.ofNullable(service));
                     break;
                 case ServiceEvent.UNREGISTERING:
                     cleanup(bundleContext);
@@ -52,7 +45,7 @@ public class CustomGenericDefaultServiceObservingProvidility<T> {
     }
 
     private void cleanup(BundleContext context) {
-        consumer.serviceUnavailable();
+        consumer.accept(Optional.empty());
         if (serviceReference != null) {
             context.ungetService(serviceReference);
             serviceReference = null;
