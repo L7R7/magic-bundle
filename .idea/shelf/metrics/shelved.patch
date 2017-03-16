@@ -1,0 +1,15 @@
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>group 'de.l7r7.proto'\nversion '0.1'\n\nsubprojects {\n    repositories {\n        mavenCentral()\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- build.gradle	(date 1489671018000)
++++ build.gradle	(revision )
+@@ -6,3 +6,5 @@
+         mavenCentral()
+     }
+ }
++
++apply from: "$rootDir/gradle/metrics.gradle"

@@ -6,36 +6,22 @@
       <module name="consumer-blueprint-number_test" target="1.8" />
       <module name="consumer-blueprint-string_main" target="1.8" />
       <module name="consumer-blueprint-string_test" target="1.8" />
-      <module name="consumer-blueprint_main" target="1.8" />
-      <module name="consumer-blueprint_test" target="1.8" />
       <module name="consumer-listener_main" target="1.8" />
       <module name="consumer-listener_test" target="1.8" />
       <module name="consumer-listening-tracker_main" target="1.8" />
       <module name="consumer-listening-tracker_test" target="1.8" />
       <module name="consumer-multi-service_main" target="1.8" />
       <module name="consumer-multi-service_test" target="1.8" />
-      <module name="consumer-number-blueprint_main" target="1.8" />
-      <module name="consumer-number-blueprint_test" target="1.8" />
       <module name="consumer-pretty-listening-tracker_main" target="1.8" />
       <module name="consumer-pretty-listening-tracker_test" target="1.8" />
-      <module name="consumer-string-blueprint_main" target="1.8" />
-      <module name="consumer-string-blueprint_test" target="1.8" />
+      <module name="consumer-tracker-customizer-filter_main" target="1.8" />
+      <module name="consumer-tracker-customizer-filter_test" target="1.8" />
       <module name="consumer-tracker-customizer_main" target="1.8" />
       <module name="consumer-tracker-customizer_test" target="1.8" />
       <module name="consumer-tracker_main" target="1.8" />
       <module name="consumer-tracker_test" target="1.8" />
       <module name="consumer-util_main" target="1.8" />
       <module name="consumer-util_test" target="1.8" />
-      <module name="consumer_main" target="1.8" />
-      <module name="consumer_test" target="1.8" />
-      <module name="magic-bundle_main" target="1.8" />
-      <module name="magic-bundle_test" target="1.8" />
-      <module name="pretty-consumer-listening-tracker_main" target="1.8" />
-      <module name="pretty-consumer-listening-tracker_test" target="1.8" />
-      <module name="service-api_main" target="1.8" />
-      <module name="service-api_test" target="1.8" />
-      <module name="service-impl_main" target="1.8" />
-      <module name="service-impl_test" target="1.8" />
       <module name="service-number-api_main" target="1.8" />
       <module name="service-number-api_test" target="1.8" />
       <module name="service-number-impl_main" target="1.8" />

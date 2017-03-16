@@ -12,5 +12,5 @@ dependencies {
 
 task deploy(type: Copy) {
     from jar
-    into 'C:\\Projekte\\SmartHome\\programs\\apache-karaf-4.0.8\\deploy'
+    into "${System.env.KARAF_HOME}\\deploy"
 }
