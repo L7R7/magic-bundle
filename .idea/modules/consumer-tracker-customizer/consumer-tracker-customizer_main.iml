@@ -12,7 +12,7 @@
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.24" level="project" />
     <orderEntry type="module" module-name="service-number-api_main" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.osgi:org.osgi.core:5.0.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.servlet:servlet-api:2.5" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.osgi:org.osgi.compendium:5.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.servlet:servlet-api:2.5" level="project" />
   </component>
 </module>
