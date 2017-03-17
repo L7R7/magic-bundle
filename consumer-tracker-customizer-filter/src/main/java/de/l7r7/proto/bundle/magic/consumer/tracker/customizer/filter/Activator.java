@@ -54,8 +54,7 @@ public class Activator implements BundleActivator {
     }
 
     private void setServiceReference(ServiceReference<Object> reference) {
-        String[] objectClasses = (String[]) reference.getProperty(Constants.OBJECTCLASS);
-        String objectClass = objectClasses[0]; // TODO: 16.03.2017 when will this array have more than one element?
+        String objectClass = ((String[]) reference.getProperty(Constants.OBJECTCLASS))[0]; // TODO: 16.03.2017 when will this array have more than one element?
 
         if (RandomStringGenerator.class.getName().equals(objectClass))
             randomStringGeneratorServiceReference = reference;
@@ -64,8 +63,7 @@ public class Activator implements BundleActivator {
     }
 
     private void unsetServiceReference(ServiceReference<Object> reference) {
-        String[] objectClasses = (String[]) reference.getProperty(Constants.OBJECTCLASS);
-        String objectClass = objectClasses[0]; // TODO: 16.03.2017 when will this array have more than one element?
+        String objectClass = ((String[]) reference.getProperty(Constants.OBJECTCLASS))[0]; // TODO: 16.03.2017 when will this array have more than one element?
 
         if (RandomStringGenerator.class.getName().equals(objectClass))
             randomStringGeneratorServiceReference = null;
