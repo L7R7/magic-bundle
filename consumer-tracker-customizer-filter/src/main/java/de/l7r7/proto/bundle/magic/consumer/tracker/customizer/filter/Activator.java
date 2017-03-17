@@ -4,6 +4,7 @@ import de.l7r7.proto.bundle.magic.number.api.RandomNumberGenerator;
 import de.l7r7.proto.bundle.magic.string.api.RandomStringGenerator;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
+import org.osgi.framework.Constants;
 import org.osgi.framework.ServiceReference;
 import org.osgi.util.tracker.ServiceTracker;
 import org.osgi.util.tracker.ServiceTrackerCustomizer;
@@ -21,7 +22,7 @@ public class Activator implements BundleActivator {
 
     @Override
     public void start(BundleContext context) throws Exception {
-        String filterString = String.format("(|(objectclass=%s)(objectclass=%s))", RandomNumberGenerator.class.getName(), RandomStringGenerator.class.getName());
+        String filterString = String.format("(|(objectClass=%s)(objectClass=%s))", RandomNumberGenerator.class.getName(), RandomStringGenerator.class.getName());
         serviceTracker = new ServiceTracker<>(context, context.createFilter(filterString), new ServiceTrackerCustomizer<Object, Object>() {
             @Override
             public Object addingService(ServiceReference<Object> reference) {
@@ -53,7 +54,7 @@ public class Activator implements BundleActivator {
     }
 
     private void setServiceReference(ServiceReference<Object> reference) {
-        String[] objectClasses = (String[]) reference.getProperty("objectClass");
+        String[] objectClasses = (String[]) reference.getProperty(Constants.OBJECTCLASS);
         String objectClass = objectClasses[0]; // TODO: 16.03.2017 when will this array have more than one element?
 
         if (RandomStringGenerator.class.getName().equals(objectClass))
@@ -63,7 +64,7 @@ public class Activator implements BundleActivator {
     }
 
     private void unsetServiceReference(ServiceReference<Object> reference) {
-        String[] objectClasses = (String[]) reference.getProperty("objectClass");
+        String[] objectClasses = (String[]) reference.getProperty(Constants.OBJECTCLASS);
         String objectClass = objectClasses[0]; // TODO: 16.03.2017 when will this array have more than one element?
 
         if (RandomStringGenerator.class.getName().equals(objectClass))
