@@ -70,8 +70,6 @@ public class Activator implements BundleActivator {
             randomStringGeneratorServiceReference = null;
         else if (RandomNumberGenerator.class.getName().equals(objectClass))
             randomNumberGeneratorServiceReference = null;
-
-        servicesConsumed = false;
     }
 
     private void consumeServicesIfPresent(BundleContext context, ServiceReference<Object> numberServiceRef, ServiceReference<Object> stringServiceRef) {
@@ -86,7 +84,6 @@ public class Activator implements BundleActivator {
             }
         } else {
             log.info("the services aren't fully available");
-            servicesConsumed = false;
         }
     }
 
