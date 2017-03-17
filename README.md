@@ -1,0 +1,2 @@
+# magic-bundle
+OSGi experiments
