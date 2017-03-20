@@ -4,9 +4,9 @@ It is intended to be used as a breakable toy in order to understand the magic OS
 
 ## Concepts covered
 Currently there are examples for the following classes/concepts:
-* `ServiceTracker`
-* `ServiceListener`
-* `ServiceTrackerCustomizer` (in combination with the `ServiceTracker`)
+* [`ServiceTracker`](https://osgi.org/javadoc/r4v42/org/osgi/util/tracker/ServiceTracker.html)
+* [`ServiceListener`](https://osgi.org/javadoc/r4v43/core/org/osgi/framework/ServiceListener.html)
+* [`ServiceTrackerCustomizer`](https://osgi.org/javadoc/r4v42/org/osgi/util/tracker/ServiceTrackerCustomizer.html) (in combination with the `ServiceTracker`)
 * Blueprint
 
 ## Provided services
@@ -67,7 +67,13 @@ The service interfaces are separated from their implementation to keep them stab
 * **servlet-filter:** Here you can find an approach on registering a servlet filter to a servlet.
 
 ## So what's the learning?
-* ...
+* Blueprint will provide service implementations after the bundle has started.
+The order in which services will appear is non-deterministic and it could be that the bundle has to run for a while before all the services are present (even if the services are present when the bundle is started).
+After making a application ready for this, things like null-checks will be all over the place (null-checks are never a bad idea in OSGi anyways).
+* In contrast to the blueprint approach, with the `ServiceTracker` it is possible to get the (existing) services before the bundle reaches its "started" state.
+ However, if you want to be safe against dynamic services, you have to add a `ServiceTrackerCustomizer` which roughly adds the functionality of a `ServiceListener` to the tracker. (An alternative is the Providility class ;-))
+* To get the type of the service a `ServiceReference` is referring to, you can get the property with the key "objectClass" (or even better: use [`Constants.OBJECTCLASS`](https://osgi.org/javadoc/r4v43/core/org/osgi/framework/Constants.html#OBJECTCLASS) from the `org.osgi.framework` package).
+This will return an *array* of strings containing the class names of the referenced service. 
 
 ---
 
