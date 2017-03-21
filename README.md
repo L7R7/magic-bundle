@@ -34,7 +34,7 @@ apply from: "$rootDir/gradle/osgi.gradle"
 This is not the most elegant solution and should probably not be used directly in any production project, but it allows the fast creation of new bundles without much overhead.
 
 ### Gradle modules
-* **consumer-blueprint-number:*** A `RandomNumberGenerator` service is provided via blueprint
+* **consumer-blueprint-number:** A `RandomNumberGenerator` service is provided via blueprint
 * **consumer-blueprint-string:** A `RandomStringGenerator` service is provided via blueprint
 * **consumer-listener:** The bundle's Activator will register a `ServiceListener` to get a `RandomNumberGenerator` service instance.
 The problem with this approach is, that it won't get a service that is present before the bundle itself is started.
@@ -71,7 +71,7 @@ The service interfaces are separated from their implementation to keep them stab
 The order in which services will appear is non-deterministic and it could be that the bundle has to run for a while before all the services are present (even if the services are present when the bundle is started).
 After making a application ready for this, things like null-checks will be all over the place (null-checks are never a bad idea in OSGi anyways).
 * In contrast to the blueprint approach, with the `ServiceTracker` it is possible to get the (existing) services before the bundle reaches its "started" state.
- However, if you want to be safe against dynamic services, you have to add a `ServiceTrackerCustomizer` which roughly adds the functionality of a `ServiceListener` to the tracker. (An alternative is the Providility class ;-))
+ However, if you want to be safe against dynamic services, you have to add a `ServiceTrackerCustomizer` which roughly adds the functionality of a `ServiceListener` to the tracker. (An alternative is the Providility class :wink:)
 * To get the type of the service a `ServiceReference` is referring to, you can get the property with the key "objectClass" (or even better: use [`Constants.OBJECTCLASS`](https://osgi.org/javadoc/r4v43/core/org/osgi/framework/Constants.html#OBJECTCLASS) from the `org.osgi.framework` package).
 This will return an *array* of strings containing the class names of the referenced service. 
 
