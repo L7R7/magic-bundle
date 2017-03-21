@@ -73,7 +73,11 @@ After making a application ready for this, things like null-checks will be all o
 * In contrast to the blueprint approach, with the `ServiceTracker` it is possible to get the (existing) services before the bundle reaches its "started" state.
  However, if you want to be safe against dynamic services, you have to add a `ServiceTrackerCustomizer` which roughly adds the functionality of a `ServiceListener` to the tracker. (An alternative is the Providility class :wink:)
 * To get the type of the service a `ServiceReference` is referring to, you can get the property with the key "objectClass" (or even better: use [`Constants.OBJECTCLASS`](https://osgi.org/javadoc/r4v43/core/org/osgi/framework/Constants.html#OBJECTCLASS) from the `org.osgi.framework` package).
-This will return an *array* of strings containing the class names of the referenced service. 
+This will return an *array(!)* of strings containing the class names of the referenced service. 
+
+## Contributing
+If you want to play around with the examples, feel free to fork the project. Pull requests are highly appreciated as well.
+If there are any questions or problems, open an issue or [ping me on Twitter](https://twitter.com/l7r7_)
 
 ---
 
