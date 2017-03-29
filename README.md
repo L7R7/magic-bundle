@@ -34,6 +34,8 @@ apply from: "$rootDir/gradle/osgi.gradle"
 This is not the most elegant solution and should probably not be used directly in any production project, but it allows the fast creation of new bundles without much overhead.
 
 ### Gradle modules
+* **consumer-bean-initialization:** This example combines the usage of blueprint to get two service instances (namely a `RandomNumberGenerator` and a `RandomStringGenerator`) and as an IoC container to provide objects for a field.
+The object provided to the `Main` class is the `StringConcatenator` which itself needs a `StringToLower` object. `StringToLower` in turn needs a `StringProvider` (Yes, the things these three classes do are pretty stupid but they serve the purpose of showing how to use blueprint for dependency injection).
 * **consumer-blueprint-number:** A `RandomNumberGenerator` service is provided via blueprint
 * **consumer-blueprint-string:** A `RandomStringGenerator` service is provided via blueprint
 * **consumer-listener:** The bundle's Activator will register a `ServiceListener` to get a `RandomNumberGenerator` service instance.

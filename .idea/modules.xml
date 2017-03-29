@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer-bean-initialization/consumer-bean-initialization.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer-bean-initialization/consumer-bean-initialization.iml" group="consumer-bean-initialization" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer-bean-initialization/consumer-bean-initialization_main.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer-bean-initialization/consumer-bean-initialization_main.iml" group="consumer-bean-initialization" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer-bean-initialization/consumer-bean-initialization_test.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer-bean-initialization/consumer-bean-initialization_test.iml" group="consumer-bean-initialization" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer-blueprint-number/consumer-blueprint-number.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer-blueprint-number/consumer-blueprint-number.iml" group="consumer-blueprint-number" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer-blueprint-number/consumer-blueprint-number_main.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer-blueprint-number/consumer-blueprint-number_main.iml" group="consumer-blueprint-number" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer-blueprint-number/consumer-blueprint-number_test.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer-blueprint-number/consumer-blueprint-number_test.iml" group="consumer-blueprint-number" />

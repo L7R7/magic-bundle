@@ -14,21 +14,12 @@
  *    limitations under the License.
  */
 
-rootProject.name = 'magic-bundle'
+group 'de.l7r7.proto'
+version '0.1'
 
-include ':service-number-api'
-include ':service-number-impl'
-include ':service-string-api'
-include ':service-string-impl'
-include ':consumer-blueprint-number'
-include ':consumer-blueprint-string'
-include ':consumer-listener'
-include ':consumer-listening-tracker'
-include ':consumer-multi-service'
-include ':consumer-tracker'
-include ':consumer-tracker-customizer'
-include ':consumer-tracker-customizer-filter'
-include ':consumer-util'
-include ':consumer-pretty-listening-tracker'
-include ':consumer-bean-initialization'
-include ':servlet-filter'
+apply from: "$rootDir/gradle/osgi.gradle"
+
+dependencies {
+    compile project(':service-number-api')
+    compile project(':service-string-api')
+}

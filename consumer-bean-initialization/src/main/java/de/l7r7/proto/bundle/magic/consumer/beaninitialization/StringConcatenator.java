@@ -14,21 +14,16 @@
  *    limitations under the License.
  */
 
-rootProject.name = 'magic-bundle'
+package de.l7r7.proto.bundle.magic.consumer.beaninitialization;
 
-include ':service-number-api'
-include ':service-number-impl'
-include ':service-string-api'
-include ':service-string-impl'
-include ':consumer-blueprint-number'
-include ':consumer-blueprint-string'
-include ':consumer-listener'
-include ':consumer-listening-tracker'
-include ':consumer-multi-service'
-include ':consumer-tracker'
-include ':consumer-tracker-customizer'
-include ':consumer-tracker-customizer-filter'
-include ':consumer-util'
-include ':consumer-pretty-listening-tracker'
-include ':consumer-bean-initialization'
-include ':servlet-filter'
+public class StringConcatenator {
+    private final StringToLower stringToLower;
+
+    public StringConcatenator(StringToLower stringToLower) {
+        this.stringToLower = stringToLower;
+    }
+
+    public String getConcatenated() {
+        return stringToLower.getLowerStrings().reduce("", (s, s2) -> s + " " + s2).trim();
+    }
+}

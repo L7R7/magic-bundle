@@ -14,21 +14,24 @@
  *    limitations under the License.
  */
 
-rootProject.name = 'magic-bundle'
+package de.l7r7.proto.bundle.magic.consumer.beaninitialization;
 
-include ':service-number-api'
-include ':service-number-impl'
-include ':service-string-api'
-include ':service-string-impl'
-include ':consumer-blueprint-number'
-include ':consumer-blueprint-string'
-include ':consumer-listener'
-include ':consumer-listening-tracker'
-include ':consumer-multi-service'
-include ':consumer-tracker'
-include ':consumer-tracker-customizer'
-include ':consumer-tracker-customizer-filter'
-include ':consumer-util'
-include ':consumer-pretty-listening-tracker'
-include ':consumer-bean-initialization'
-include ':servlet-filter'
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+import java.util.stream.Stream;
+
+public class StringProvider {
+    private List<String> strings;
+
+    public StringProvider() {
+        strings = new ArrayList<>();
+        strings.add(UUID.randomUUID().toString());
+        strings.add(UUID.randomUUID().toString());
+        strings.add(UUID.randomUUID().toString());
+    }
+
+    public Stream<String> getStrings() {
+        return strings.stream();
+    }
+}
