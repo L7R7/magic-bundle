@@ -43,7 +43,7 @@ The problem with this approach is, that it won't get a service that is present b
 * **consumer-listener-tracker:** This bundle combines a `ServiceTracker` and a `ServiceListener` to get a `RandomNumberGenerator` service instance.
 Basically, this bundle combines the functionality of the *consumer-tracker* bundle with the *consumer-listener* bundle.
 * **consumer-multi-service:** *not implemented yet*
-* **consumer-pretty-listening-tracker:** This bundle does the same thing as the *consumer-listener-tracker* bundle but hides away the OSGi complexity in a utility class called [`CustomGenericDefaultServiceObservingProvidility`](https://github.com/L7R7/magic-bundle/blob/master/consumer-util/src/main/java/de/l7r7/proto/bundle/magic/util/CustomGenericDefaultServiceObservingProvidility.java). 
+* **consumer-pretty-listening-tracker:** This bundle does the same thing as the *consumer-listener-tracker* bundle encapsulates the OSGi complexity in a utility class called [`CustomGenericDefaultServiceObservingProvidility`](https://github.com/L7R7/magic-bundle/blob/master/consumer-util/src/main/java/de/l7r7/proto/bundle/magic/util/CustomGenericDefaultServiceObservingProvidility.java). (Don't take this too serious :wink:)
 * **consumer-tracker:** The bundle's Activator will use a `ServiceTracker` to get a `RandomNumberGenerator` service instance.
 The caveat here is that the tracker isn't capable of handling services that appear and disappear at runtime with this implementation.
 * **consumer-tracker-customizer:** This bundle provides a `RandomNumberGenerator` service instance by using a `ServiceTracker` with a `ServiceTrackerCustomizer`.
