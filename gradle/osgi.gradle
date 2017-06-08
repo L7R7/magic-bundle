@@ -28,5 +28,5 @@ dependencies {
 
 task deploy(type: Copy) {
     from jar
-    into "${System.env.KARAF_HOME}\\deploy"
+    into "${System.env.KARAF_HOME}/deploy"
 }
